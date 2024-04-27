@@ -1,10 +1,10 @@
-package tech.buildrun.shortener;
+package tech.buildrun.urlshortener;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShortenerApplicationTests {
+class UrlshortenerApplicationTests {
 
 	@Test
 	void contextLoads() {

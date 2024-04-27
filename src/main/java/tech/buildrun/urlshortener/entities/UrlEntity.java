@@ -1,4 +1,4 @@
-package tech.buildrun.shortener.entities;
+package tech.buildrun.urlshortener.entities;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 
 @Document(collection = "urls")
-public class Url {
+public class UrlEntity {
 
     @Id
     private String id;
@@ -17,10 +17,10 @@ public class Url {
     @Indexed(expireAfterSeconds = 0)
     private LocalDateTime expiresAt;
 
-    public Url() {
+    public UrlEntity() {
     }
 
-    public Url(String id, String fullUrl, LocalDateTime expiresAt) {
+    public UrlEntity(String id, String fullUrl, LocalDateTime expiresAt) {
         this.id = id;
         this.fullUrl = fullUrl;
         this.expiresAt = expiresAt;

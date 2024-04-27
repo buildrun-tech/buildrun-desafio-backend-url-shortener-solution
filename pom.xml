@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tech.buildrun</groupId>
-	<artifactId>shortener</artifactId>
+	<artifactId>urlshortener</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>shortener</name>
+	<name>urlshortener</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
